@@ -1,0 +1,58 @@
+.game-leaders {
+    width: 92vw;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media screen and (min-width: 576px) {
+    .game-leaders {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .game-leaders {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .game-leaders {
+        width: 40vw;
+    }
+}
+
+.game-leaders__btns {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game-leaders__select {
+    width: 80%;
+    color: var(--color-text);
+    background: var(--color-bg-menu);
+    border-color: var(--color-text);
+    padding: 4px 8px;
+}
+
+.game-leaders__select:focus {
+    border-color: var(--color-text);
+    box-shadow: var(--shadow)
+}
+
+.table {
+    color: var(--color-text);
+    --bs-table-striped-color: var(--color-text);
+    --bs-table-hover-color: var(--color-text);
+    --bs-table-hover-bg: #00000052;
+}
+
+.game-leaders__not-found {
+    text-align: center;
+    margin-top: 50px;
+}

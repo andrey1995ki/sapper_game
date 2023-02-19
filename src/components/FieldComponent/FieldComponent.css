@@ -1,0 +1,177 @@
+.game-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-width: 70vw;
+    height: 100%;
+    padding: 0 10px 10px 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .game-field {
+        min-width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .game-field {
+        min-width: 20vw;
+    }
+}
+
+.game-field__header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.header-item__group {
+    display: flex;
+    align-items: center;
+}
+
+.header-item__group-right {
+    text-align: right;
+    width: 30px;
+}
+
+.header-item__group-left {
+    text-align: left;
+    width: 30px;
+}
+
+.row-field {
+    display: flex;
+}
+
+.col-field {
+    height: var(--size);
+    width: var(--size);
+    border: var(--field-border);
+    cursor: var(--field-cursor);
+    background: var(--field-color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+
+}
+
+.col-field[field-size='extra-extra-large'] {
+    --size: 40px;
+    --font-size: 20px;
+}
+
+.col-field[field-size='extra-large'] {
+    --size: 30px;
+    --font-size: 20px;
+}
+
+
+.col-field[field-size='large'] {
+    --size: 25px;
+    --font-size: 20px;
+}
+
+.col-field[field-size='medium'] {
+    --size: 20px;
+    --font-size: 20px;
+}
+
+.col-field[field-size='small'] {
+    --size: 15px;
+    --font-size: 14px;
+}
+
+.col-field[field-size='extra-small'] {
+    --size: 10px;
+    --font-size: 9px;
+}
+
+.col-field:hover {
+    background-color: var(--field-hover-bg);
+    transition: all 0.5s ease-out;
+    border: var(--field-hover-border);
+}
+
+.col-field[field-status='open'] {
+    --field-color-bg: none;
+    --field-border: 0.5px solid #6d7378;
+    --field-hover-bg: none;
+    --field-hover-border: 0.5px solid #6d7378;
+    --field-cursor: defaul;
+}
+
+.col-field[field-status='close'] {
+    --field-color-bg: var(--color-bg);
+    --field-border: 0.5px solid rgba(157, 157, 157, 0.16);
+    --field-hover-bg: var(--color-bg);
+    --field-hover-border: 0.5px solid #6d7378;
+    --field-cursor: pointer;
+}
+
+.col-field[show-status='show'] {
+    --field-color-bg: none;
+    --field-hover-bg: rgba(255, 255, 255, 0.25);
+}
+
+span {
+    cursor: default;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span[count-color='1'] {
+    color: blue;
+}
+
+span[count-color='2'] {
+    color: green;
+}
+
+span[count-color='3'] {
+    color: red;
+}
+
+span[count-color='4'] {
+    color: darkblue;
+}
+
+span[count-color='5'] {
+    color: saddlebrown;
+}
+
+span[count-color='6'] {
+    color: turquoise;
+}
+
+span[count-color='7'] {
+    color: black;
+}
+
+.modal-content {
+    background: var(--color-bg-menu);
+}
+
+.result-modal__result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.result-modal__save {
+    color: var(--color-text);
+    background: var(--color-bg-menu);
+    border-color: var(--color-text);
+}
+
+.result-modal__save:focus {
+    border-color: var(--color-text);
+    box-shadow: var(--shadow)
+}
