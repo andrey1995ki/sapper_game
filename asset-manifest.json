@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sapper_game/static/css/main.1011506d.css",
-    "main.js": "/sapper_game/static/js/main.20bfa7b7.js",
+    "main.js": "/sapper_game/static/js/main.0ddfb571.js",
     "index.html": "/sapper_game/index.html",
     "main.1011506d.css.map": "/sapper_game/static/css/main.1011506d.css.map",
-    "main.20bfa7b7.js.map": "/sapper_game/static/js/main.20bfa7b7.js.map"
+    "main.0ddfb571.js.map": "/sapper_game/static/js/main.0ddfb571.js.map"
   },
   "entrypoints": [
     "static/css/main.1011506d.css",
-    "static/js/main.20bfa7b7.js"
+    "static/js/main.0ddfb571.js"
   ]
 }
