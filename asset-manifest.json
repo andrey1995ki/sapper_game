@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/supper_game/static/css/main.1011506d.css",
+    "main.js": "/supper_game/static/js/main.20bfa7b7.js",
+    "index.html": "/supper_game/index.html",
+    "main.1011506d.css.map": "/supper_game/static/css/main.1011506d.css.map",
+    "main.20bfa7b7.js.map": "/supper_game/static/js/main.20bfa7b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1011506d.css",
+    "static/js/main.20bfa7b7.js"
+  ]
+}
